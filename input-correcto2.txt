@@ -1,0 +1,6 @@
+prueba "Busqueda"
+{
+  dado el.input contiene "consulta"
+  cuando el.boton es "buscar"
+  entonces la.lista debe contener "resultados"
+}

@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "configurations": [
+    {
+      "name": "Debug ANTLR4 grammar",
+      "type": "antlr-debug",
+      "request": "launch",
+      "grammar": "TestSuite.g4",
+      "input": "input.txt",
+      "printParseTree": true,
+      "visualParseTree": true
+    },
+    {
+      "name": "Run JavaScript",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/indexTestSuite.js"
+    }
+  ]
+}

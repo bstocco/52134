@@ -1,0 +1,6 @@
+prueba "FalloLogin"
+{
+  dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entnces la.pagina debe contener "bienvenida"
+}

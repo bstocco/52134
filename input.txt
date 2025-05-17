@@ -1,0 +1,6 @@
+prueba "Acceso"
+{
+  dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe contener "bienvenida"
+}
