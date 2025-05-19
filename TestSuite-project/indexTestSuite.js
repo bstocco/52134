@@ -45,11 +45,6 @@ async function main() {
     console.log("\n✅ Entrada válida.");
     console.log(`\n🌳 Árbol de derivación:\n${tree.toStringTree(parser.ruleNames)}`);
 
-    // Recorrido con Listener
-    console.log("\n🎧 Recorrido con Listener:");
-    const listener = new CustomTestSuiteListener();
-    ParseTreeWalker.DEFAULT.walk(listener, tree);
-
     // Interpretación con Visitor
     console.log("\n🧠 Interpretación con Visitor:");
     const visitor = new CustomTestSuiteVisitor();
