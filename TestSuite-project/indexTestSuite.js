@@ -48,8 +48,7 @@ async function main() {
     // Recorrido con Listener
     console.log("\n🎧 Recorrido con Listener:");
     const listener = new CustomTestSuiteListener();
-    const walker = new ParseTreeWalker();
-    walker.walk(listener, tree);
+    ParseTreeWalker.DEFAULT.walk(listener, tree);
 
     // Interpretación con Visitor
     console.log("\n🧠 Interpretación con Visitor:");
