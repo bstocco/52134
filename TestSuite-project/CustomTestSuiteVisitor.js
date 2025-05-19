@@ -42,14 +42,10 @@ class CustomTestSuiteVisitor extends TestSuiteVisitor {
     const valoresCtx = ctx.valor();
     let valoresTexto = '';
     if (valoresCtx && valoresCtx.length > 0) {
-      valoresTexto = valoresCtx[0].getText();
-      for (let i = 1; i < valoresCtx.length; i++) {
-        valoresTexto += ' y ' + valoresCtx[i].getText();
-      }
+      valoresTexto = valoresCtx.map(v => v.getText()).join(' y ');
     }
 
     console.log(` → ${tipo} ${objeto} ${estado} ${valoresTexto}`);
-
     return this.visitChildren(ctx);
   }
 }
