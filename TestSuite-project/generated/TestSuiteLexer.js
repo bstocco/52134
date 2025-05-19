@@ -1,4 +1,4 @@
-// Generated from c:/Users/barba/52134/TestSuite-project/TestSuite.g4 by ANTLR 4.13.2
+// Generated from TestSuite.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 

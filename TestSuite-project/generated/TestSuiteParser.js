@@ -1,9 +1,7 @@
-// Generated from c:/Users/barba/52134/TestSuite-project/TestSuite.g4 by ANTLR 4.13.2
+// Generated from TestSuite.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import TestSuiteListener from './TestSuiteListener.js';
-import TestSuiteVisitor from './TestSuiteVisitor.js';
-
 const serializedATN = [4,1,25,122,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,
 4,2,5,7,5,2,6,7,6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,
 1,0,4,0,28,8,0,11,0,12,0,29,1,1,1,1,1,1,5,1,35,8,1,10,1,12,1,38,9,1,1,1,
@@ -649,14 +647,6 @@ class SuiteContext extends antlr4.ParserRuleContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitSuite(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -725,14 +715,6 @@ class PruebaContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof TestSuiteListener ) {
 	        listener.exitPrueba(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitPrueba(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -812,14 +794,6 @@ class PasoContext extends antlr4.ParserRuleContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitPaso(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -871,14 +845,6 @@ class CuandoPasoContext extends PasoTipoContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitCuandoPaso(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -907,14 +873,6 @@ class EntoncesPasoContext extends PasoTipoContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitEntoncesPaso(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -941,14 +899,6 @@ class DadoPasoContext extends PasoTipoContext {
 	    if(listener instanceof TestSuiteListener ) {
 	        listener.exitDadoPaso(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitDadoPaso(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -1003,14 +953,6 @@ class ObjetoContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof TestSuiteListener ) {
 	        listener.exitObjeto(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitObjeto(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -1068,14 +1010,6 @@ class EstadoContext extends antlr4.ParserRuleContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitEstado(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -1127,14 +1061,6 @@ class NumeroValorContext extends ValorContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitNumeroValor(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -1161,14 +1087,6 @@ class ListaValorContext extends ValorContext {
 	    if(listener instanceof TestSuiteListener ) {
 	        listener.exitListaValor(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitListaValor(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -1199,14 +1117,6 @@ class TextoValorContext extends ValorContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitTextoValor(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -1235,14 +1145,6 @@ class VariableValorContext extends ValorContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitVariableValor(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -1269,14 +1171,6 @@ class BooleanoValorContext extends ValorContext {
 	    if(listener instanceof TestSuiteListener ) {
 	        listener.exitBooleanoValor(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitBooleanoValor(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -1330,14 +1224,6 @@ class TextoSimpleContext extends TextoContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitTextoSimple(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -1364,14 +1250,6 @@ class TextoDobleContext extends TextoContext {
 	    if(listener instanceof TestSuiteListener ) {
 	        listener.exitTextoDoble(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitTextoDoble(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -1436,14 +1314,6 @@ class ListaContext extends antlr4.ParserRuleContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitLista(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -1483,14 +1353,6 @@ class VariableContext extends antlr4.ParserRuleContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitVariable(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -1524,14 +1386,6 @@ class NumeroContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof TestSuiteListener ) {
 	        listener.exitNumero(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitNumero(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -1569,14 +1423,6 @@ class BooleanoContext extends antlr4.ParserRuleContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitBooleano(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -1610,14 +1456,6 @@ class IdentificadorContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof TestSuiteListener ) {
 	        listener.exitIdentificador(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof TestSuiteVisitor ) {
-	        return visitor.visitIdentificador(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
