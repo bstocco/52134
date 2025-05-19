@@ -32,6 +32,7 @@ Este proyecto es un **analizador léxico y sintáctico** desarrollado con **ANTL
    ```bash
    git clone https://github.com/bstocco/52134.git
    cd 52134
+   cd TestSuite-project //este último posee todos los archivos excepto los 4 inputs, el README y las Reglas.pdf y es donde funciona el árbol sintáctico
 
 2. Instalar las dependencias:
 npm install
