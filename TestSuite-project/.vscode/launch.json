@@ -9,12 +9,6 @@
       "input": "input.txt",
       "printParseTree": true,
       "visualParseTree": true
-    },
-    {
-      "name": "Run JavaScript",
-      "type": "node",
-      "request": "launch",
-      "program": "${workspaceFolder}/indexTestSuite.js"
     }
   ]
 }
