@@ -20,13 +20,10 @@ class CustomTestSuiteVisitor extends TestSuiteVisitor {
     // Objeto, concatenando identificadores con puntos si hay
     const objetoCtx = ctx.objeto();
     let objeto = '';
-    if (objetoCtx.articulo && objetoCtx.articulo.length > 0) {
-      objeto += objetoCtx.articulo[0].getText() + '.';
-    }
-    if (objetoCtx.identificador && objetoCtx.identificador.length > 0) {
-      objeto += objetoCtx.identificador[0].getText();
-      for (let i = 1; i < objetoCtx.identificador.length; i++) {
-        objeto += '.' + objetoCtx.identificador[i].getText();
+    if (objetoCtx) {
+      const identificadores = objetoCtx.identificador();
+      if (identificadores && identificadores.length > 0) {
+        objeto = identificadores.map(id => id.getText()).join('.');
       }
     }
 
