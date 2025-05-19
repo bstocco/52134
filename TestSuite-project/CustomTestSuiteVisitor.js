@@ -17,12 +17,17 @@ class CustomTestSuiteVisitor extends TestSuiteVisitor {
     // Tipo: dado, cuando, entonces
     const tipo = ctx.children[0].getText().toUpperCase();
 
-    // Objeto, construimos concatenando identificadores con puntos si hay
+    // Objeto, concatenando identificadores con puntos si hay
     const objetoCtx = ctx.objeto();
-    let objeto = objetoCtx.articulo() ? objetoCtx.articulo().getText() + '.' : '';
-    objeto += objetoCtx.identificador(0).getText();
-    for (let i = 1; i < objetoCtx.identificador().length; i++) {
-      objeto += '.' + objetoCtx.identificador(i).getText();
+    let objeto = '';
+    if (objetoCtx.articulo && objetoCtx.articulo.length > 0) {
+      objeto += objetoCtx.articulo[0].getText() + '.';
+    }
+    if (objetoCtx.identificador && objetoCtx.identificador.length > 0) {
+      objeto += objetoCtx.identificador[0].getText();
+      for (let i = 1; i < objetoCtx.identificador.length; i++) {
+        objeto += '.' + objetoCtx.identificador[i].getText();
+      }
     }
 
     // Estado opcional
