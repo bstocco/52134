@@ -26,7 +26,7 @@ Este proyecto es un **analizador léxico y sintáctico** desarrollado con **ANTL
 ---
 
 ## 💻 Instalación
-
+IMPORTANTE
 1. Clonar el repositorio:
 
    ```bash
